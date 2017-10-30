@@ -43,3 +43,34 @@ En el caso de generación de objectos si esta bien visto no juntar la declaraci�
 
 ## Generación de componentes en JS
 
+```js
+(function (exports) {
+var init = function(){
+
+},
+
+var initParam = function(param){
+
+}
+
+var module = {
+    testModule: {
+        init: init,
+        initParam: initParam
+    }
+};
+
+$.extend(exports, module);
+
+})(test);
+```
+
+Esto despues nos permitira usarlo como objeto y tener acceso solo a las funciones y variables que queramos exportar en el modulo
+
+```js
+ test.testModule.init();
+```
+y
+``js
+test.testModule.initParam(param);
+```

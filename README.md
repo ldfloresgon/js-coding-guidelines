@@ -1,4 +1,6 @@
-Definición de variables
+# Directrices JS
+
+## Definición de variables
 
 Si solo tenemos una variable la declararemos así:
 
@@ -39,5 +41,5 @@ var ball = {
 En el caso de generación de objectos si esta bien visto no juntar la declaración, para ayudar a la diferenciación de contexto.
 
 
-Generación de componentes en JS
+## Generación de componentes en JS
 

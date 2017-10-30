@@ -71,6 +71,6 @@ Esto despues nos permitira usarlo como objeto y tener acceso solo a las funcione
  test.testModule.init();
 ```
 y
-``js
+```js
 test.testModule.initParam(param);
 ```

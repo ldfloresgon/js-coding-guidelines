@@ -119,3 +119,44 @@ test-testModule.foo
 ```
 Daria error, ya que no es accesible, lo mismo ocurre con las funciones.
 
+## Best practices
+
+Eliminar lineas de codigo innecesarias
+
+En vez de:
+
+```js
+if(typeof a != undefined && a != undefined){
+    a = 42:
+}
+```
+
+Mejor hacer:
+
+```js
+if(a){
+    a = 42;
+}
+```
+
+
+
+En vez de:
+
+```js
+if(a){
+    a = 42:
+}
+```
+
+Mejor hacer:
+
+```js
+a = a || 42;
+```
+
+
+Thanks to: https://google.github.io/styleguide/javascriptguide.xml
+
+Happy coding! :)
+

@@ -121,7 +121,27 @@ Daria error, ya que no es accesible, lo mismo ocurre con las funciones.
 
 ## Best practices
 
-Eliminar lineas de codigo innecesarias
+### Evitar parentesis que no son necesarios:
+
+En vez de:
+
+```js
+typeof(a) != undefined 
+return (a)
+}
+```
+
+Mejor hacer:
+
+```js
+typeof a != undefined 
+return a
+```
+
+Asi queda más limpio
+
+
+### Eliminar lineas de codigo innecesarias
 
 En vez de:
 

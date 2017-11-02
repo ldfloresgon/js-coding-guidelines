@@ -2,6 +2,22 @@
 
 ## Definición de variables
 
+Una variable se va a declarar siempre con un var delante.
+
+```js
+var test = "";
+```
+
+Una constante la escribiremos en mayusculay con _ entre palabras. 
+
+```js
+var CONST_TEST = "test";
+```
+
+```info
+No usaremos const ya que IE no lo acepta.
+```
+
 Si solo tenemos una variable la declararemos así:
 
 ```js

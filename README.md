@@ -74,3 +74,32 @@ y
 ```js
 test.testModule.initParam(param);
 ```
+
+De esta forma nos beneficiamos de poder tener funciones y variables privadas, ya que si no las incluimos en el modulo que exportaremos no seran accesibles, por ejemplo, si yo declaro la variable foo de esta forma:
+
+```js
+(function (exports) {
+var init = function(){
+
+},
+
+var foo = ""
+
+var module = {
+    testModule: {
+        init: init,
+    }
+};
+
+$.extend(exports, module);
+
+})(test);
+```
+
+Si yo intentera hacer algo tal que asi:
+
+```js
+test-testModule.foo
+```
+Daria error, ya que no es accesible, lo mismo ocurre con las funciones.
+

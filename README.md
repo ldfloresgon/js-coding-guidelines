@@ -1,4 +1,4 @@
-# Directrices JS
+# Best Practices
 
 ## Definición de variables
 

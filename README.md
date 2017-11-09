@@ -107,7 +107,7 @@ var init = function(){
 
 },
 
-var foo = ""
+var foo = "",
 
 var module = {
     testModule: {
@@ -136,7 +136,6 @@ En vez de:
 ```js
 typeof(a) != undefined 
 return (a)
-}
 ```
 
 Mejor hacer:

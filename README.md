@@ -14,7 +14,7 @@ Una constante la escribiremos en mayuscula y con _ entre palabras.
 var CONST_TEST = "test";
 ```
 
-```info
+```warning
 No usaremos const ya que IE no lo acepta.
 ```
 

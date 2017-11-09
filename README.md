@@ -8,7 +8,7 @@ Una variable se va a declarar siempre con un var delante.
 var test = "";
 ```
 
-Una constante la escribiremos en mayusculay con _ entre palabras. 
+Una constante la escribiremos en mayuscula y con _ entre palabras. 
 
 ```js
 var CONST_TEST = "test";

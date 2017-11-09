@@ -54,6 +54,14 @@ var ball = {
     };
 ```
 
+Si declaramos objetos sencillos como estos, podremos hacer referencia a sus propiedades de una forma como esta:
+
+```js
+person.name;
+
+ball.size;
+```
+
 En el caso de generación de objectos si esta bien visto no juntar la declaración, para ayudar a la diferenciación de contexto.
 
 
@@ -115,7 +123,7 @@ $.extend(exports, module);
 Si yo intentera hacer algo tal que asi:
 
 ```js
-test-testModule.foo
+test.testModule.foo
 ```
 Daria error, ya que no es accesible, lo mismo ocurre con las funciones.
 
@@ -159,13 +167,13 @@ if(a){
 }
 ```
 
-
+### Para ahorras más lineas de codigo innecesarias
 
 En vez de:
 
 ```js
 if(a){
-    a = 42:
+    a = 42;
 }
 ```
 

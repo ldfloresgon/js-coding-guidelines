@@ -2,35 +2,36 @@ if(!myObject) myObject = {};
 
 (function (exports) {
 
-var name = "Jhon";
-var age = 35;
-var id = 1;
-var getName = function(){
+var name = "Jhon",
+var age = 35,
+var id = 1,
+    
+var getName = function() {
     return this.name;
 },
     
-var getAge = function(){
+var getAge = function() {
     return this.age;
 },
  
-var setName = function(name){
+var setName = function(name) {
     this.name = name;
 },
     
-var setAge = function(age){
+var setAge = function(age) {
     this.age = age;
 },
 
-var getId = function(){
+var getId = function() {
    return this.id;  
 },
 
 var module = {
     person: {
         getName : getName,
-        getAge: getAge,
-        setName: setName,
-        setAge: setAge
+        getAge : getAge,
+        setName : setName,
+        setAge : setAge
     }
 };
 

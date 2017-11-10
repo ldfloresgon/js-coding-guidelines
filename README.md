@@ -2,6 +2,8 @@
 
 ## Definición de variables
 
+Las variables las definimos siempre al principio de las funciones porque son function scope gracias a la tecnica de hoisting(https://www.w3schools.com/js/js_hoisting.asp).
+
 Una variable se va a declarar siempre con un var delante.
 
 ```js
@@ -15,7 +17,7 @@ var CONST_TEST = "test";
 ```
 
 ```warning
-No usaremos const ya que IE no lo acepta.
+No usaremos const ya que IE no lo acepta. Si utilizaremos es6 si podriamos utilizar const
 ```
 
 Si solo tenemos una variable la declararemos así:
@@ -39,6 +41,8 @@ var lastName = "";
 ```
 
 Para mantener el contexto tenemos la posibilidad de generar objetos que contengan la información, y de esta forma poder separarlo más comodamente, a saber:
+
+Object literal notation
 
 ```js
 var person = {
@@ -67,8 +71,10 @@ En el caso de generación de objectos si esta bien visto no juntar la declaraci�
 
 ## Generación de componentes en JS
 
+Module Pattern
 ```js
 (function (exports) {
+
 var init = function(){
 
 },
@@ -125,7 +131,7 @@ Si yo intentera hacer algo tal que asi:
 ```js
 test.testModule.foo
 ```
-Daria error, ya que no es accesible, lo mismo ocurre con las funciones.
+Daria error, ya que no es accesible, lo mismo ocurre con las funciones (closure: https://developer.mozilla.org/es/docs/Web/JavaScript/Closures).
 
 ## Best practices
 
